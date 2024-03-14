@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINEZ [S5-TECHNICAL] Module 7 & 8 Machine Problem</title>
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <div class="container-fluid">
+        <div class="banner-cta">
+            <h1 class="banner-cta-title">Food Order</h1>
+            <p class="banner-cta-text">PAOTSIN is growing fast food chain with outlets located in Various malls and universities in Luzon. We have been serving authentic Asian cuisine for the past 20 years. We are pioneer in serving fried dumplings since 1995. We started the trend
+                of selling dumpling with Hainanese rice.</p>
+
+        </div>
+    </div>
+
+    <center>
+        <header class="main_h">
+
+            <div class="row">
+                <img class="logo" src="data:image/png;base64,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"
+                    alt="">
+
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://jorellandrei.github.io/FINEZ_TECHNICAL4A-AWD-FEUTECH/">Home</a></li>
+                        <li><a style="color: #fdfdfd;" href="">Prices</a></li>
+
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- / row -->
+
+        </header>
+
+        <div class="container m-4 gallery-container">
+
+            <div class="gallery">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+                    <div class="col hover-2">
+                        <div class="card" style="width: 25rem; border:none;">
+                            <img src="./assets/images/Dumplings.png" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h4 class="card-title">₱64.00</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row align-items-center text-center g-0 product-name">
+
+                            <div class="col-17">
+                                <a class="btn btn-dark w-100 p-3 rounded-0 text-warning" style="margin-left: -100px; z-index: 1; margin-top: 4px;">Dumplings</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col hover-2">
+                        <div class="card" style="width: 25rem; border:none;">
+                            <img src="./assets/images/Hainanese.png" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h4 class="card-title">₱84.00</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row align-items-center text-center g-0 product-name">
+
+                            <div class="col-17">
+                                <a class="btn btn-dark w-100 p-3 rounded-0 text-warning" style="margin-left: -100px; z-index: 1;">Hainanese</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col hover-2">
+                        <div class="card" style="width: 25rem; border:none;">
+                            <img src="./assets/images/Hainanese.png" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h4 class="card-title">₱152.00</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row align-items-center text-center g-0 product-name">
+
+                            <div class="col-17">
+                                <a class="btn btn-dark w-100 p-3 rounded-0 text-warning" style="margin-left: -100px; z-index: 1;">Laksa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col hover-2">
+                        <div class="card" style="width: 25rem; border:none;">
+                            <img src="./assets/images/Laksa.png" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h4 class="card-title">₱136.00</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row align-items-center text-center g-0 product-name">
+
+                            <div class="col-17">
+                                <a class="btn btn-dark w-100 p-3 rounded-0 text-warning" style="margin-left: -100px; z-index: 1; margin-top: 4px;">Asian Chicken</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col hover-2">
+                        <div class="card" style="width: 25rem; border:none;">
+                            <img src="./assets/images/Crackling.png" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h4 class="card-title">₱144.00</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row align-items-center text-center g-0 product-name">
+
+                            <div class="col-17">
+                                <a class="btn btn-dark w-100 p-3 rounded-0 text-warning" style="margin-left: -100px; z-index: 1;">Crackling Pork</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col hover-2">
+                        <div class="card" style="width: 25rem; border:none;">
+                            <img src="./assets/images/Drinks.png" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h4 class="card-title">₱44.00</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row align-items-center text-center g-0 product-name">
+
+                            <div class="col-17">
+                                <a class="btn btn-dark w-100 p-3 rounded-0 text-warning" style="margin-left: -100px; z-index: 1;">Panda Coolers</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <br><br><br>
+            <br><br><br>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <hr>
+                    <div class="col-md-10 ">
+                        <form id="msform" action="#">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active">Order Form</li>
+                                <li>Customer Information</li>
+                                <li>Sales Invoice</li>
+                            </ul>
+                            <fieldset>
+                                <div class="col-md-12 text-right">
+                                    <span id="total-quantity-label">0</span>
+                                </div>
+
+                                <h2 class="fs-title">Food Order Form</h2>
+                                <h3 class="fs-subtitle">Pick your Pao Order!</h3>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="dumplings" class="form-label">Dumplings (₱64.00)</label>
+                                        <input type="number" class="form-control food-item" id="dumplings" name="dumplings" min="0">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="hainanese" class="form-label">Hainanese (₱84.00)</label>
+                                        <input type="number" class="form-control food-item" id="hainanese" name="hainanese" min="0">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="laksa" class="form-label">Laksa (₱152.00)</label>
+                                        <input type="number" class="form-control food-item" id="laksa" name="laksa" min="0" style="transform:translateY(20px)">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="asian_chicken" class="form-label">Asian Chicken (₱136.00)</label>
+                                        <input type="number" class="form-control food-item" id="asian_chicken" name="asian_chicken" min="0">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="crackling_pork" class="form-label">Crackling Pork (₱144.00)</label>
+                                        <input type="number" class="form-control food-item" id="crackling_pork" name="crackling_pork" min="0">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="panda_coolers" class="form-label">Panda Coolers (₱44.00)</label>
+                                        <input type="number" class="form-control food-item" id="panda_coolers" name="panda_coolers" min="0">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="total_bill" class="form-label">Total Bill</label>
+                                        <input type="number" class="form-control" id="total_bill" name="total_bill" min="0" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="total_cash" class="form-label">Total Cash <span style="color: red;"> *</span></label>
+                                        <input type="number" class="form-control" id="total_cash" name="total_cash" min="0" required>
+                                    </div>
+                                </div>
+
+                                <!-- Optional: You can also keep the button and use it for manual calculation -->
+                                <button type="button" class="btn btn-primary next action-button">Next</button>
+
+
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Customer Information</h2>
+                                <h3 class="fs-subtitle">May we know who you are?</h3>
+                                <!-- Customer Information Inputs -->
+                                <input type="text" name="name" placeholder="Name" required>
+                                <input type="text" name="address" placeholder="Home Address" required>
+                                <input type="text" name="contact_number" placeholder="Contact Number" required>
+                                <!-- Reset Button -->
+                                <button type="reset" class="btn btn-danger action-button-reset">Reset</button>
+
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+
+                                <input type="button" name="next" class="next action-button submit" value="Next">
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Sales Invoice Receipt</h2>
+                                <div id="sales-invoice">
+                                    <p><strong>Name: </strong><span id="invoice_name"></span></p>
+                                    <p><strong>Address: </strong><span id="invoice_address"></span></p>
+                                    <p><strong>Contact Number: </strong><span id="invoice_contact"></span></p>
+                                    <p><strong>Total Bill: </strong><span id="invoice_total_bill"></span></p>
+                                    <p><strong>Total Cash: </strong><span id="invoice_total_cash"></span></p>
+                                    <p><strong>Change: </strong><span id="invoice_change"></span></p>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </center>
+
+    <script src="./assets/JS/script.js"></script>
+
+</body>
+
+</html>
